@@ -79,6 +79,14 @@ h1 {
   margin: 0 auto;
 }
 
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 button {
   padding: 14px 20px;
   font-size: 16px;
@@ -89,6 +97,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 
 button:hover {
   background-color: #34495e;
