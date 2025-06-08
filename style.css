@@ -84,14 +84,14 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  background-color: #4caf50;
+  background-color: #34495e;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #388e3c;
+  background-color: #34495e;
 }
 
 /* Modo Computador: grid 5x5 */
