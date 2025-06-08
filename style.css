@@ -111,6 +111,13 @@ button:hover {
     margin: 0 auto;
     grid-template-columns: repeat(5, 1fr);
   }
+
+  .grid-container2 {
+    max-width: none;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /* 📱 Modo Responsivo (Tablet e Celular) */
@@ -143,6 +150,11 @@ button:hover {
   }
 
   .grid-container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+
+  .grid-container2 {
     grid-template-columns: 1fr;
     max-width: 90%;
   }
