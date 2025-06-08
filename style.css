@@ -1,36 +1,25 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   text-align: center;
-  padding: 30px;
-  background-color: #f0f0f0;
+  padding: 40px;
 }
 
 h1 {
   margin-bottom: 40px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-}
-
-.horizontal-buttons,
-.vertical-buttons {
-  display: flex;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.vertical-buttons {
-  flex-direction: column;
-}
-
-/* Estilo dos botões */
+/* Botões */
 button {
-  padding: 12px 20px;
+  padding: 14px 20px;
   font-size: 16px;
   border: none;
   border-radius: 8px;
@@ -44,20 +33,14 @@ button:hover {
   background-color: #388e3c;
 }
 
-/* Layout para telas grandes (ex: computadores) */
+/* Modo Computador: grid 5x5 */
 @media screen and (min-width: 1024px) {
-  .container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .horizontal-buttons {
-    flex-direction: row;
-  }
-
-  .vertical-buttons {
-    flex-direction: column;
+  .grid-container {
+    max-width: none;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
+
 
