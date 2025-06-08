@@ -1,33 +1,63 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   background-color: #f0f0f0;
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.button-container {
+.container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 300px;
-  margin: 0 auto;
+  gap: 30px;
+  align-items: center;
 }
 
+.horizontal-buttons,
+.vertical-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vertical-buttons {
+  flex-direction: column;
+}
+
+/* Estilo dos botões */
 button {
-  padding: 15px 25px;
+  padding: 12px 20px;
   font-size: 16px;
-  cursor: pointer;
   border: none;
   border-radius: 8px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #388e3c;
 }
+
+/* Layout para telas grandes (ex: computadores) */
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .horizontal-buttons {
+    flex-direction: row;
+  }
+
+  .vertical-buttons {
+    flex-direction: column;
+  }
+}
+

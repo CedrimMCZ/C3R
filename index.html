@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meus Links</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Links Responsivos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Meus Links Favoritos</h1>
+  <h1>Links Favoritos</h1>
 
-  <div class="button-container">
-    <button onclick="irPara('https://www.google.com')">Google</button>
-    <button onclick="irPara('https://www.youtube.com')">YouTube</button>
-    <button onclick="irPara('https://www.github.com')">GitHub</button>
-    <button onclick="irPara('https://pt.wikipedia.org')">Wikipedia</button>
+  <div class="container">
+    <div class="horizontal-buttons">
+      <button onclick="irPara('https://www.google.com')">Google</button>
+      <button onclick="irPara('https://www.youtube.com')">YouTube</button>
+      <button onclick="irPara('https://www.github.com')">GitHub</button>
+      <button onclick="irPara('https://www.wikipedia.org')">Wikipedia</button>
+      <button onclick="irPara('https://www.stackoverflow.com')">Stack Overflow</button>
+    </div>
+
+    <div class="vertical-buttons">
+      <button onclick="irPara('https://www.linkedin.com')">LinkedIn</button>
+      <button onclick="irPara('https://www.instagram.com')">Instagram</button>
+      <button onclick="irPara('https://www.twitter.com')">Twitter</button>
+      <button onclick="irPara('https://www.reddit.com')">Reddit</button>
+      <button onclick="irPara('https://chat.openai.com')">ChatGPT</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
