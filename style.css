@@ -20,7 +20,7 @@ body {
 .sidebar {
   width: 220px;
   background-color: #2c3e50;
-  color: white;
+  color: #ffcc01;
   padding: 20px;
   position: fixed;
   top: 0;
@@ -44,7 +44,7 @@ body {
 }
 
 .menu-links a {
-  color: white;
+  color: #ffcc01;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -88,22 +88,33 @@ h1 {
   margin: 0 auto;
 }
 
-button {
+.link {
   padding: 14px 20px;
   font-size: 16px;
   border: none;
   border-radius: 8px;
   background-color: #34495e;
+  color: #ffcc01;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.link:hover {
+  background-color: #557594;
+}                                             
+
+.gplan {
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #34a853;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-
-button:hover {
-  background-color: #34495e;
+.gplan:hover {
+  background-color: #557594;
 }
-
 /* Modo Computador: grid 5x5 */
 @media screen and (min-width: 1024px) {
   .grid-container {
