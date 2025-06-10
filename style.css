@@ -32,8 +32,10 @@ body {
 }
 
 .logo {
-  width: 200px;
-  margin-bottom: 60px;
+  width: 300px;
+  margin-bottom: 90px;
+  width: 95%;
+
 }
 
 .menu-links {
@@ -148,6 +150,7 @@ h1 {
 
   .logo {
     margin-bottom: 15px;
+    width: 95%;
   }
 
   .menu-links {
