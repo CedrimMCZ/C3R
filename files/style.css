@@ -60,6 +60,19 @@ body {
   background-color: #34495e;
 }
 
+.current {
+  background-color: #178396;
+}
+
+.links-pages {
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
 /* Conteúdo principal */
 
 .main-content {
